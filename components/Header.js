@@ -6,7 +6,7 @@ export function Header() {
       as="section"
       pb="200px"
       pt="88px"
-      px="344px"
+      px="32px"
       color="#F7FAFC"
       bg="#6B46C1"
       textAlign="center"
