@@ -1,29 +1,29 @@
 import { Box, Button, Flex, Heading, Icon, Text } from "@chakra-ui/react"
 import { CheckIcon } from "./images/icons/icons"
 
-export const ListItem = ({ props, children }) => {
-  return (
-    <>
-      <Flex direction="row" mb="16px">
-        <Icon as={CheckIcon} />
-        <Text marginLeft="20px" fontSize="18px" fontWeight="400">
-          {children}
-        </Text>
-      </Flex>
-    </>
-  )
-}
+export const FeaturesList = ({ children }) => (
+  <>
+    <Flex direction="row" mb="16px" alignItems="center">
+      <Icon as={CheckIcon} />
+      <Text paddingLeft="20px" fontSize="18px" fontWeight="400">
+        {children}
+      </Text>
+    </Flex>
+  </>
+)
 
 export function Pricing() {
   return (
     <>
       <Box
-        transform="translateY(-160px)"
+        // transform="translateY(-160px)"
+        maxW="994px"
+        margin="auto"
+        mt="-160px"
+        overflow="hidden"
         borderRadius="12px"
         background="#FFF"
         boxShadow="0px 10px 10px -5px rgba(0, 0, 0, 0.04), 0px 20px 25px -5px rgba(0, 0, 0, 0.10)"
-        maxW="994px"
-        margin={"auto"}
       >
         <Flex>
           {/* Left */}
@@ -69,10 +69,10 @@ export function Pricing() {
               Access these features when you get this pricing package for your
               business.
             </Text>
-            <ListItem>International calling and messaging API</ListItem>
-            <ListItem>Additional phone numbers</ListItem>
-            <ListItem>Automated messages via Zapier</ListItem>
-            <ListItem>24/7 support and consulting</ListItem>
+            <FeaturesList>International calling and messaging API</FeaturesList>
+            <FeaturesList>Additional phone numbers</FeaturesList>
+            <FeaturesList>Automated messages via Zapier</FeaturesList>
+            <FeaturesList>24/7 support and consulting</FeaturesList>
           </Box>
         </Flex>
       </Box>

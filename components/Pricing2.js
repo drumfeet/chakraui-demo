@@ -18,7 +18,7 @@ export function Pricing2() {
   return (
     <>
       <Box
-        //    mt="-160px"
+        //mt="-160px"
         transform="translateY(-160px)"
       >
         <Flex justifyContent="center" py="28px">
